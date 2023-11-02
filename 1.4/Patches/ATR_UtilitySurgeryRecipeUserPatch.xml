@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- Add utility drones to MHC's Surgery Recipes at the abstract level -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[@Name="MHC_surgeryMechanicalBase"]/recipeUsers</xpath>
+        <value>
+            <li>ATD_GruntDrone</li>
+            <li>ATD_OverseerDrone</li>
+            <li>ATD_EnvoyDrone</li>
+        </value>
+    </Operation>
+
+    <!-- Add utility drones to ATR's android surgery recipes at the abstract level -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[@Name="ATR_surgeryMechanicalBase"]/recipeUsers</xpath>
+        <value>
+            <li>ATD_GruntDrone</li>
+            <li>ATD_OverseerDrone</li>
+            <li>ATD_EnvoyDrone</li>
+        </value>
+    </Operation>
+
+</Patch>

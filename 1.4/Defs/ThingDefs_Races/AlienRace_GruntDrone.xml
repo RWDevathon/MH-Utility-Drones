@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<AlienRace.ThingDef_AlienRace ParentName="ATR_BaseMechanicalPawn">
+		<defName>ATD_GruntDrone</defName>
+		<label>Grunt Drone</label>
+		<description>Matching the simplicity of their purpose, the simplicity of the grunt drone's design is its greatest feature. Designed purely for work, they are durable, capable, and persistent. Lacking the fine motor controls of less hyper-specialized designs, though, they are incapable of most complex tasks.\n\nThe most advanced elements of its design are its batteries and generators, which allow it to maximize its workflow and minimize downtime.</description>
+		<alienRace>
+			<graphicPaths>
+                <body>
+                    <path>Things/Pawns/Humanlikes/Mark2/body/Naked_None</path>
+                </body>
+                <head>
+                    <path>Things/Pawns/Humanlikes/Mark2/head/None</path>
+                </head>
+                <skinShader>Cutout</skinShader>
+            </graphicPaths>
+            <generalSettings>
+                <alienPartGenerator>
+					<headBodyPartDef>ATR_MechanicalHead</headBodyPartDef>
+					<headTypes>
+                        <li>ATM_Mark2_None</li>
+                    </headTypes>
+                    <bodyTypes>
+                        <li>Male</li>
+                    </bodyTypes>
+                    <headOffset>(0, 0.34)</headOffset>
+                    <headOffsetSpecific>
+                        <east>
+                            <offset>(-0.04, 0)</offset>
+                        </east>
+                        <west>
+                            <offset>(0.04, 0)</offset>
+                        </west>
+                    </headOffsetSpecific>
+                    <colorChannels Inherit="False">
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li> <!--Crimson-->
+										<weight>4</weight>
+										<min>RGBA(180, 60, 60, 255)</min>
+										<max>RGBA(120, 40, 40, 255)</max>
+									</li>
+								</options>
+							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>100</weight>
+										<min>RGBA(255, 255, 255, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+								</options>
+							</second>
+						</li>
+					</colorChannels>
+                </alienPartGenerator>
+            </generalSettings>
+		</alienRace>
+        <!-- The UI Icon here is not normally used for humanlikes, but it is supplied here so that the mod settings
+             have a graphic available when trying to display the race in the considerations section. -->
+        <uiIconPath>Things/Pawns/Humanlikes/Mark2/ATM_MarkTwoExemplar</uiIconPath>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<MoveSpeed>5.10</MoveSpeed>
+			<ComfyTemperatureMin>-15</ComfyTemperatureMin>
+			<ComfyTemperatureMax>40</ComfyTemperatureMax>
+			<WorkSpeedGlobal>1.2</WorkSpeedGlobal>
+			<MentalBreakThreshold>0.01</MentalBreakThreshold>
+			<GlobalLearningFactor>0.1</GlobalLearningFactor>
+			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+            <MHC_MaintenanceRetention>2.5</MHC_MaintenanceRetention>
+            <MHC_NutritionalIntakeEfficiency>1.1</MHC_NutritionalIntakeEfficiency>
+            <MHC_ChargingSpeed>2.5</MHC_ChargingSpeed>
+            <MDR_ComplexityLimit MayRequire="Killathon.MechanicalHumanlikes.MechDronesReprogrammed">20</MDR_ComplexityLimit>
+            <MDR_SkillLimit MayRequire="Killathon.MechanicalHumanlikes.MechDronesReprogrammed">8</MDR_SkillLimit>
+			<Mass>144</Mass>
+		</statBases>
+		<tools>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>10</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>10</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<body>ATD_GruntBody</body>
+			<baseBodySize>1.4</baseBodySize>
+            <baseHungerRate>0.6</baseHungerRate>
+		</race>
+        <recipes>
+            <li>MHC_CoolantInjection</li>
+            <li>MHC_LubricantInjection</li>
+        </recipes>
+		<modExtensions>
+            <li Class="MechHumanlikes.MHC_MechanicalPawnExtension">
+                <canBeSapient>false</canBeSapient>
+                <droneSkillLevel>10</droneSkillLevel>
+                <blacklistedNeeds>
+                    <li>DrugDesire</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">Hygiene</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">Bladder</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">DBHThirst</li>
+                </blacklistedNeeds>
+                <mechanicalNeeds>
+                    <li><key>MHC_Coolant</key><value>0.5</value></li>
+                    <li><key>MHC_Lubrication</key><value>2</value></li>
+                </mechanicalNeeds>
+            </li>
+            <li Class="MechHumanlikes.MDR_ProgrammableDroneExtension" MayRequire="Killathon.MechanicalHumanlikes.MechDronesReprogrammed">
+                <maxDirectives>3</maxDirectives>
+                <inherentDirectives>
+                    <li>MDR_DirectiveGrunt</li>
+                </inherentDirectives>
+                <inherentWorkTypes>
+                    <li>BasicWorker</li>
+                    <li>Hauling</li>
+                    <li>Cleaning</li>
+                </inherentWorkTypes>
+                <forbiddenWorkTypes>
+                    <li>Doctor</li>
+                    <li>MHC_Mechanic</li>
+                    <li>Warden</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">Childcare</li>
+                    <li>Cooking</li>
+                    <li>Hunting</li>
+                    <li>Handling</li>
+                    <li>Smithing</li>
+                    <li>Tailoring</li>
+                    <li>Art</li>
+                    <li>Research</li>
+                </forbiddenWorkTypes>
+            </li>
+		</modExtensions>
+		<butcherProducts>
+            <Steel>50</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</butcherProducts>
+	</AlienRace.ThingDef_AlienRace>
+
+</Defs>

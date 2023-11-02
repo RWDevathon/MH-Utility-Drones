@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef ParentName="ATR_BaseNewbootPlayerPawnKind">
+		<defName>ATD_GruntDroneColony</defName>
+		<label>Grunt Drone Newboot</label>
+		<race>ATD_GruntDrone</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>ATD_UtilityDrone</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ATR_BaseNewbootPlayerPawnKind">
+		<defName>ATD_OverseerDroneColony</defName>
+		<label>Overseer Drone Newboot</label>
+		<race>ATD_OverseerDrone</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>ATD_UtilityDrone</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ATR_BaseNewbootPlayerPawnKind">
+		<defName>ATD_EnvoyDroneColony</defName>
+		<label>Envoy Drone Newboot</label>
+		<race>ATD_EnvoyDrone</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>ATD_UtilityDrone</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+</Defs>

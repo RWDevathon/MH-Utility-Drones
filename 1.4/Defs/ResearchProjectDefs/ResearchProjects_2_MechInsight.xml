@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>ATD_SimpleDrones</defName>
+		<label>Simple Utility Drones</label>
+		<tab>ATR_MechResearch</tab>
+		<description>Drones fulfill a great many purposes without any concern for their own wellbeing or pesky things like morality. Simple utilitarian drones can fulfill specific tasks far better than most any generalized drone could.</description>
+		<baseCost>1200</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>ATR_MechanicalInsight</li>
+        </prerequisites>
+		<researchViewX>1</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+
+</Defs>

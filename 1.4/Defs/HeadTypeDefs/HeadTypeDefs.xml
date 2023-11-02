@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- Mark 2 -->
+    <!-- None -->
+
+    <HeadTypeDef>
+        <defName>ATM_Mark2_None</defName>
+        <graphicPath>Things/Pawns/Humanlikes/Mark2/head/None</graphicPath>
+        <gender>None</gender>
+    </HeadTypeDef>
+
+</Defs>
