@@ -6,7 +6,7 @@
         <label>Grunt Drone</label>
         <description>An uninitialized Grunt drone. Matching the simplicity of their purpose, the simplicity of the grunt drone's design is its greatest feature. Designed purely for work, they are durable, capable, and persistent. Lacking the fine motor controls of less hyper-specialized designs, though, they are incapable of most complex tasks.\n\nThe most advanced elements of its design are its batteries and generators, which allow it to maximize its workflow and minimize downtime.</description>
         <graphicData>
-            <texPath>Things/Pawns/Humanlikes/Mark2/head/None_south</texPath>
+            <texPath>Things/Pawns/Humanlikes/Mark2/ATM_MarkTwoExemplar</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <recipeMaker>
@@ -36,7 +36,7 @@
         <label>Overseer Drone</label>
         <description>An uninitialized Overseer drone. Overseer drones are intimidating beings, inhuman and alien. With a single limb reaching from their spindly torso affixed with needle-like appendages, a trio of visual sensors that emit uncomfortable light, and an affixing stare, overseers are the scrying and analytical extensions of their masters. Capable of carrying out research tasks and the vital task of reprogramming and mending broken machinery, overseers are critical components in the massive scale machinery of fully automated drone hives.\n\nWhile some believe them to have inscrutable sapience, they are still drones, and follow whatever programming they possess. Drones reprogramming drones is a nightmare for many, and overseer drones are often hunted for this very reason.\n\nTheir sheer innate complexity leaves precious little room for much else.</description>
         <graphicData>
-            <texPath>Things/Pawns/Humanlikes/Mark2/head/None_south</texPath>
+            <texPath>Things/Pawns/Humanlikes/Mark2/ATM_MarkTwoExemplar</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <recipeMaker>
@@ -66,7 +66,7 @@
         <label>Envoy Drone</label>
         <description>An uninitialized Envoy drone. Mouthpieces of paranoid dictators, messengers of lords and organizations, diplomatic units between warring factions, envoys are the forward and expendable faces of those they serve. Without fear for self, ability to be autonomous, or to incite rebellion, these units form the cornerstone of any survival-oriented figurehead's public outreach programs. Fragile and unthreatening, these units rely on the vast apparatus of charismatic voices and personas encoded within them to cajole, convert, subvert, or simply relay messages to others. Unusual for a RimWorld given their cost relative to their value, envoys are rarely witnessed besides in the service of highly advanced drone hives or Ultratech wanderers.\n\nWhile nominally designed for social tasks alone, they are versatile enough to perform tasks that do not require brute strength.</description>
         <graphicData>
-            <texPath>Things/Pawns/Humanlikes/Mark2/head/None_south</texPath>
+            <texPath>Things/Pawns/Humanlikes/Mark2/ATM_MarkTwoExemplar</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <recipeMaker>

@@ -13,25 +13,13 @@
             <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
         </li>
         <li>
-            <packageId>erdelf.HumanoidAlienRaces</packageId>
-            <displayName>Humanoid Alien Races 2.0</displayName>
-            <steamWorkshopUrl>steam://url/CommunityFilePage/839005762</steamWorkshopUrl>
-            <downloadUrl>https://github.com/RimWorld-CCL-Reborn/AlienRaces</downloadUrl>
-        </li>
-        <li>
-            <packageId>Killathon.MechanicalHumanlikesCore</packageId>
-            <displayName>Mechanical Humanlikes Core</displayName>
-            <steamWorkshopUrl>steam://url/CommunityFilePage/2974524016</steamWorkshopUrl>
-            <downloadUrl>https://github.com/RWDevathon/Dev_Mechanical-Humanlikes-Core</downloadUrl>
-        </li>
-        <li>
             <packageId>Killathon.MechHumanlikes.AndroidTiersCore</packageId>
             <displayName>Android Tiers Core</displayName>
             <steamWorkshopUrl>steam://url/CommunityFilePage/2974536022</steamWorkshopUrl>
             <downloadUrl>https://github.com/RWDevathon/Android-Tiers-Reforged-Core</downloadUrl>
         </li>
         <li>
-            <packageId>Killathon.MechHumanlikes.MechDronesReprogrammed</packageId>
+            <packageId>Killathon.MechanicalHumanlikes.MechDronesReprogrammed</packageId>
             <displayName>MH: Drones Reprogrammed</displayName>
             <steamWorkshopUrl>steam://url/CommunityFilePage/3063222294</steamWorkshopUrl>
             <downloadUrl>https://github.com/RWDevathon/MH-Drones-Reprogrammed</downloadUrl>
@@ -39,12 +27,12 @@
     </modDependencies>
     <packageId>Killathon.MechHumanlikes.UtilityDrones</packageId>
     <loadAfter>
-        <li>Killathon.MechanicalHumanlikesCore</li><!-- Dependency -->
         <li>Killathon.MechHumanlikes.AndroidTiersCore</li><!-- Dependency -->
+        <li>Killathon.MechanicalHumanlikes.MechDronesReprogrammed</li><!-- Dependency -->
     </loadAfter>
     <description>
     <![CDATA[Utility mechanical humanlikes, all designed with specialization and capability in mind.
 
-Version <color=#FFD800>0.1.0</color>.]]>
+Version <color=#FFD800>1.0.0</color>.]]>
     </description>
 </ModMetaData>
