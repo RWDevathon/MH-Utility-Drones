@@ -2,7 +2,7 @@
 <Defs>
 
     <BodyDef>
-        <defName>ATD_GruntBody</defName>
+        <defName>MHUD_GruntBody</defName>
         <label>Grunt</label>
         <corePart>
             <def>ATR_MechanicalThorax</def>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ScenarioDef>
+        <defName>MHUD_WaywardEnvoy</defName>
+        <label>The Wayward Envoy</label>
+        <description>A set of coordinates. A series of encoded messages. A self-guided vessel. A small retinue. By all accounts, this had all the hallmarks of a successful diplomatic operation. There was just one missing element: the other party. No one came to the coordinates - at least, no one with the prearranged comms handshake. Thus, the envoy waited. Then the vessel was hit by something and commenced self-detonation.\n\nProgrammed for self-preservation, the envoy could act once again. With its retinue, it activated emergency escape pods.\n\nNote: Drones have unique strengths and numerous weaknesses, which makes this a difficult scenario.\n\nNote: You will be able to assign the programming of your drones upon starting the game.\nThis scenario will only function if options - mod options - Alien Race - Randomize Starting Pawns on Reroll is OFF, due to vanilla/HAR interactions. Apologies.</description>
+        <scenario>
+            <summary>One crashlanded envoy drone and two grunts, programmed only for self-preservation.</summary>
+            <playerFaction>
+                <def>PlayerFaction</def>
+                <factionDef>MHUD_PlayerDroneFaction</factionDef>
+            </playerFaction>
+            <parts>
+                <!-- Config pages -->
+                <li Class="MechHumanlikes.ScenPart_ConfigPage_ConfigureStartingPawns_Drones">
+                    <def>MHUD_ConfigureStartingDrones</def>
+                    <pawnChoiceCount>8</pawnChoiceCount>
+                    <customSummary>Start with one envoy drone and two grunt drones.</customSummary>
+                    <droneCounts>
+                        <li>
+                            <kindDef>MHUD_EnvoyDroneColony</kindDef>
+                            <requiredAtStart>true</requiredAtStart>
+                            <count>1</count>
+                        </li>
+                        <li>
+                            <kindDef>MHUD_GruntDroneColony</kindDef>
+                            <requiredAtStart>true</requiredAtStart>
+                            <count>2</count>
+                        </li>
+                    </droneCounts>
+                </li>
+
+                <!-- Player starting stuff spawn method-->
+                <li Class="ScenPart_PlayerPawnsArriveMethod">
+                    <def>PlayerPawnsArriveMethod</def>
+                    <visible>false</visible>
+                    <method>DropPods</method>
+                </li>
+
+                <!-- Game start dialog -->
+                <li Class="ScenPart_GameStartDialog">
+                    <def>GameStartDialog</def>
+                    <text>The vessel ejected its drop pods prior to total self annihilation, leaving nothing but scrap burning in the atmosphere. The envoy rises from its pod, and observes the surroundings silently. Its retinue swiftly free themselves of their pod and come to its side, awaiting orders. Self-preservation is the only directive.\n\nWill the envoy seek to return to the stars to reach the randevous and continue its mission? Or will circumstance lead to new orders?</text>
+                    <closeSound>GameStartSting</closeSound>
+                </li>
+
+                <!-- Player starting things -->
+
+                <!-- Starting research -->
+
+            </parts>
+        </scenario>
+    </ScenarioDef>
+
+</Defs>

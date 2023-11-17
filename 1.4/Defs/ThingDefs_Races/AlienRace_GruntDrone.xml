@@ -2,7 +2,7 @@
 <Defs>
 
 	<AlienRace.ThingDef_AlienRace ParentName="ATR_BaseMechanicalPawn">
-		<defName>ATD_GruntDrone</defName>
+		<defName>MHUD_GruntDrone</defName>
 		<label>Grunt Drone</label>
 		<description>Matching the simplicity of their purpose, the simplicity of the grunt drone's design is its greatest feature. Designed purely for work, they are durable, capable, and persistent. Lacking the fine motor controls of less hyper-specialized designs, though, they are incapable of most complex tasks.\n\nThe most advanced elements of its design are its batteries and generators, which allow it to maximize its workflow and minimize downtime.</description>
 		<alienRace>
@@ -127,7 +127,7 @@
 			</li>
 		</tools>
 		<race>
-			<body>ATD_GruntBody</body>
+			<body>MHUD_GruntBody</body>
 			<baseBodySize>1.4</baseBodySize>
             <baseHungerRate>0.6</baseHungerRate>
 		</race>

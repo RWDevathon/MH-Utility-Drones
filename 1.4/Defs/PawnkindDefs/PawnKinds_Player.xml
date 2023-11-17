@@ -2,39 +2,40 @@
 <Defs>
 
 	<PawnKindDef ParentName="ATR_BaseNewbootPlayerPawnKind">
-		<defName>ATD_GruntDroneColony</defName>
+		<defName>MHUD_GruntDroneColony</defName>
 		<label>Grunt Drone Newboot</label>
-		<race>ATD_GruntDrone</race>
+		<race>MHUD_GruntDrone</race>
+        <defaultFactionType>PlayerColony</defaultFactionType>
 		<backstoryFiltersOverride Inherit="False">
 			<li>
 				<categories>
-					<li>ATD_UtilityDrone</li>
+					<li>MHUD_UtilityDrone</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="ATR_BaseNewbootPlayerPawnKind">
-		<defName>ATD_OverseerDroneColony</defName>
+		<defName>MHUD_OverseerDroneColony</defName>
 		<label>Overseer Drone Newboot</label>
-		<race>ATD_OverseerDrone</race>
+		<race>MHUD_OverseerDrone</race>
 		<backstoryFiltersOverride Inherit="False">
 			<li>
 				<categories>
-					<li>ATD_UtilityDrone</li>
+					<li>MHUD_UtilityDrone</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="ATR_BaseNewbootPlayerPawnKind">
-		<defName>ATD_EnvoyDroneColony</defName>
+		<defName>MHUD_EnvoyDroneColony</defName>
 		<label>Envoy Drone Newboot</label>
-		<race>ATD_EnvoyDrone</race>
+		<race>MHUD_EnvoyDrone</race>
 		<backstoryFiltersOverride Inherit="False">
 			<li>
 				<categories>
-					<li>ATD_UtilityDrone</li>
+					<li>MHUD_UtilityDrone</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>

@@ -5,9 +5,9 @@
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/RecipeDef[@Name="MHC_surgeryMechanicalBase"]/recipeUsers</xpath>
         <value>
-            <li>ATD_GruntDrone</li>
-            <li>ATD_OverseerDrone</li>
-            <li>ATD_EnvoyDrone</li>
+            <li>MHUD_GruntDrone</li>
+            <li>MHUD_OverseerDrone</li>
+            <li>MHUD_EnvoyDrone</li>
         </value>
     </Operation>
 
@@ -15,9 +15,9 @@
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/RecipeDef[@Name="ATR_surgeryMechanicalBase"]/recipeUsers</xpath>
         <value>
-            <li>ATD_GruntDrone</li>
-            <li>ATD_OverseerDrone</li>
-            <li>ATD_EnvoyDrone</li>
+            <li>MHUD_GruntDrone</li>
+            <li>MHUD_OverseerDrone</li>
+            <li>MHUD_EnvoyDrone</li>
         </value>
     </Operation>
 

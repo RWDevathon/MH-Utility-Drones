@@ -2,7 +2,7 @@
 <Defs>
 
     <BodyDef>
-        <defName>ATD_EnvoyBody</defName>
+        <defName>MHUD_EnvoyBody</defName>
         <label>Envoy</label>
         <corePart>
             <def>ATR_MechanicalThorax</def>

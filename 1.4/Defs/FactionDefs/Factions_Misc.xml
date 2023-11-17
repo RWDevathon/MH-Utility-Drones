@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef ParentName="PlayerFactionBase">
+		<defName>MHUD_PlayerDroneFaction</defName>
+		<label>New Drone Arrivals</label>
+		<description>Your drone colony.</description>
+		<isPlayer>true</isPlayer>
+		<backstoryFilters>
+            <li>
+                <categories>
+                    <li>Offworld</li>
+                </categories>
+            </li>
+		</backstoryFilters>
+		<basicMemberKind>MHUD_GruntDroneColony</basicMemberKind>
+		<pawnsPlural>colonists</pawnsPlural>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+        <allowedCultures><li>Astropolitan</li></allowedCultures>
+		<techLevel>Industrial</techLevel>
+		<factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Synthread</li>
+			</thingDefs>
+		</apparelStuffFilter>
+        <modExtensions>
+            <!-- All options for SkyMind-related faction extension presented here with default values. -->
+            <li MayRequire="Killathon.SkyMind.SkyMindNetwork" Class="SkyMind.SMN_FactionSkyMindExtension">
+                <canUseSurrogates>true</canUseSurrogates> <!-- Default: false -->
+                <minLegalPawnsForSurrogates>3</minLegalPawnsForSurrogates> <!-- Default: 5 -->
+                <minStrengthForSurrogates>40</minStrengthForSurrogates> <!-- Default: 0 -->
+                <percentChanceForGroupToHaveSurrogates>0.15</percentChanceForGroupToHaveSurrogates> <!-- Default: 0.3 -->
+                <percentOfGroupToBeSurrogatesMin>0.0</percentOfGroupToBeSurrogatesMin> <!-- Default: 0.0 -->
+                <percentOfGroupToBeSurrogatesMax>1.0</percentOfGroupToBeSurrogatesMax> <!-- Default: 1.0 -->
+            </li>
+        </modExtensions>
+	</FactionDef>
+
+</Defs>

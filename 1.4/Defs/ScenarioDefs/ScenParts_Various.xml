@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ScenPartDef>
+        <defName>MHUD_ConfigureStartingDrones</defName>
+        <label>starting drones</label>
+        <scenPartClass>MechHumanlikes.ScenPart_ConfigPage_ConfigureStartingPawns_Drones</scenPartClass>
+        <selectionWeight>0</selectionWeight>
+        <pageClass>Page_ConfigureStartingPawns</pageClass>
+        <summaryPriority>500</summaryPriority>
+        <category>Fixed</category>
+    </ScenPartDef>
+
+</Defs>

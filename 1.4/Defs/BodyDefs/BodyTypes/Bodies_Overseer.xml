@@ -2,7 +2,7 @@
 <Defs>
 
     <BodyDef>
-        <defName>ATD_OverseerBody</defName>
+        <defName>MHUD_OverseerBody</defName>
         <label>Overseer</label>
         <corePart>
             <def>ATR_MechanicalThorax</def>

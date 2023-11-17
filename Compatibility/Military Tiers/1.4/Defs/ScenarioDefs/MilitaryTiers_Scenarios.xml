@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ScenarioDef>
+        <defName>MHUD_AutonomousDrones</defName>
+        <label>The Autonomous</label>
+        <description>The data file for point of origin, purpose, and parameters is encrypted. The vessel fulfilled its purpose and disbursed its passengers to the planetary surface by way of drop-pod. Why was an overseer unit - a prized possession of any master - deployed with so few resources? Is this a reconnaissance mission by an interstellar power? An infiltration using sleeper-agent drones? A simple mistake?\n\nThe overseer does not care, for it is not capable of caring. It will do what all overseers do - expand operations.\n\nNote: Drones have unique strengths and numerous weaknesses, which makes this a difficult scenario.\n\nNote: You will be able to assign the programming of your drones upon starting the game.\nThis scenario will only function if options - mod options - Alien Race - Randomize Starting Pawns on Reroll is OFF, due to vanilla/HAR interactions. Apologies.</description>
+        <scenario>
+            <summary>An overseer unit, a grunt, and two M1 combat units with no parameters.</summary>
+            <playerFaction>
+                <def>PlayerFaction</def>
+                <factionDef>MHUD_PlayerDroneFaction</factionDef>
+            </playerFaction>
+            <parts>
+                <!-- Config pages -->
+                <li Class="MechHumanlikes.ScenPart_ConfigPage_ConfigureStartingPawns_Drones">
+                    <def>MHUD_ConfigureStartingDrones</def>
+                    <pawnChoiceCount>8</pawnChoiceCount>
+                    <customSummary>Start with an overseer, a grunt, and two M1's.</customSummary>
+                    <droneCounts>
+                        <li>
+                            <kindDef>MHUD_OverseerDroneColony</kindDef>
+                            <requiredAtStart>true</requiredAtStart>
+                            <count>1</count>
+                        </li>
+                        <li>
+                            <kindDef>MHUD_GruntDroneColony</kindDef>
+                            <requiredAtStart>true</requiredAtStart>
+                            <count>1</count>
+                        </li>
+                        <li>
+                            <kindDef>ATM_M1WarriorColony</kindDef>
+                            <requiredAtStart>true</requiredAtStart>
+                            <count>2</count>
+                        </li>
+                    </droneCounts>
+                </li>
+
+                <!-- Player starting stuff spawn method-->
+                <li Class="ScenPart_PlayerPawnsArriveMethod">
+                    <def>PlayerPawnsArriveMethod</def>
+                    <visible>false</visible>
+                    <method>DropPods</method>
+                </li>
+
+                <!-- Game start dialog -->
+                <li Class="ScenPart_GameStartDialog">
+                    <def>GameStartDialog</def>
+                    <text>The overseer rises from its pod, and observes the surroundings silently. The other drones idle nearby, awaiting directives. No resources were provided. Expansion will occur regardless. The overseer is only capable of understanding expansion.</text>
+                    <closeSound>GameStartSting</closeSound>
+                </li>
+
+                <!-- Player starting things -->
+
+                <!-- Starting research -->
+                <li Class="ScenPart_StartingResearch">
+                    <def>StartingResearch</def>
+                    <project>MHUD_SimpleDrones</project>
+                </li>
+
+                <li Class="ScenPart_StartingResearch">
+                    <def>StartingResearch</def>
+                    <project>ATM_M1Warriors</project>
+                </li>
+
+
+            </parts>
+        </scenario>
+    </ScenarioDef>
+
+</Defs>

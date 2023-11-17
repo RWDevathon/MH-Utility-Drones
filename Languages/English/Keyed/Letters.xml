@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+    <!-- Reprogram Letter -->
+    <MHUD_ReprogramDrone>Reprogram {0}</MHUD_ReprogramDrone>
+    <MHUD_ReprogramDroneDesc>{0} lacks programming and needs to have it set in order to function. Open this letter to set it now.</MHUD_ReprogramDroneDesc>
+    <MHUD_InvalidUntilSpawned>Unit must be spawned in order to be reprogrammed properly.</MHUD_InvalidUntilSpawned>
+
+</LanguageData>

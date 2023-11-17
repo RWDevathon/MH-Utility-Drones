@@ -2,7 +2,7 @@
 <Defs>
 
 	<ResearchProjectDef>
-		<defName>ATD_ComplexDrones</defName>
+		<defName>MHUD_ComplexDrones</defName>
 		<label>Complex Utility Drones</label>
 		<tab>ATR_MechResearch</tab>
 		<description>Drones fulfill a great many purposes without any concern for their own wellbeing or pesky things like morality. With breakthroughs in the achievable complexity, highly specialized and complex drones can take over tasks that would normally require years of training and expertise - although they can not surpass sapient ingenuity. Utilitarian drones can fulfill specific tasks far better than most any generalized drone could.</description>
@@ -10,7 +10,7 @@
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
             <li>ATR_MechanicalOptimization</li>
-            <li>ATD_SimpleDrones</li>
+            <li>MHUD_SimpleDrones</li>
         </prerequisites>
 		<researchViewX>6</researchViewX>
 		<researchViewY>3</researchViewY>
