@@ -13,12 +13,14 @@ Highly specialized drones that excel at particular tasks - what they lack in gen
 * The Grunt, a workhorse drone specialized in dealing with unskilled labor.
 * The Envoy, a fragile drone capable of social skills and excellent versatility, but unable to do most labor tasks.
 * The Overseer, a hyperspecialized drone capable of mechanic and research work, but almost nothing else.
+* Two scenarios utilizing the new races (one requiring Military Tiers) that will prove very difficult. Can a drone hive survive alone, or will sapients take command?
 
 ## Known Issues/Incompatibilities
 * Unknown
 
 ## Contributions
 * Thermo: Thumbnail/Preview
+* Indonesian Gentleman(Discord)/Greensniperhat(Steam): ATM Pawn graphics (which are being used as placeholders here)!
 
 Background by kotkoa on Freepik
 (https://www.freepik.com/free-vector/big-data-concept-background_21063019.htm#query=red%20circuit%20backround&position=0&from_view=search&track=robertav1_2_sidr%22%3EImage)

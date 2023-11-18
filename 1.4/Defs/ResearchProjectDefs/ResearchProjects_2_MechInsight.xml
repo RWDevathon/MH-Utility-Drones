@@ -3,7 +3,7 @@
 
 	<ResearchProjectDef>
 		<defName>MHUD_SimpleDrones</defName>
-		<label>Simple Utility Drones</label>
+		<label>Simple utility drones</label>
 		<tab>ATR_MechResearch</tab>
 		<description>Drones fulfill a great many purposes without any concern for their own wellbeing or pesky things like morality. Simple utilitarian drones can fulfill specific tasks far better than most any generalized drone could.</description>
 		<baseCost>1200</baseCost>

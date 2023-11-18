@@ -38,10 +38,10 @@
 							<name>skin</name>
 							<first Class="ColorGenerator_Options">
 								<options>
-									<li> <!--Crimson-->
+									<li> <!--Gray-->
 										<weight>4</weight>
-										<min>RGBA(180, 60, 60, 255)</min>
-										<max>RGBA(120, 40, 40, 255)</max>
+										<min>RGBA(140, 140, 140, 255)</min>
+										<max>RGBA(140, 140, 140, 255)</max>
 									</li>
 								</options>
 							</first>
