@@ -56,7 +56,7 @@
         </costList>
         <comps>
             <li Class="ATReforged.CompProperties_PawnSpawner">
-                <pawnKind>MHUD_GruntDroneColony</pawnKind>
+                <pawnKind>MHUD_OverseerDroneColony</pawnKind>
             </li>
         </comps>
     </ThingDef>
@@ -87,7 +87,7 @@
         </costList>
         <comps>
             <li Class="ATReforged.CompProperties_PawnSpawner">
-                <pawnKind>MHUD_GruntDroneColony</pawnKind>
+                <pawnKind>MHUD_EnvoyDroneColony</pawnKind>
             </li>
         </comps>
     </ThingDef>
