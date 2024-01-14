@@ -157,7 +157,6 @@
                 <forbiddenWorkTypes>
                     <li>Firefighter</li>
                     <li>BasicWorker</li>
-                    <li>MHC_Mechanic</li>
                     <li>Hunting</li>
                     <li>Construction</li>
                     <li>Growing</li>
