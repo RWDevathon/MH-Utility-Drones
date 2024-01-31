@@ -140,6 +140,8 @@
                 <inherentWorkTypes>
                     <li>Research</li>
                     <li>MHC_Mechanic</li>
+                    <li>Smithing</li>
+                    <li>Crafting</li>
                 </inherentWorkTypes>
                 <forbiddenWorkTypes>
                     <li>Firefighter</li>
